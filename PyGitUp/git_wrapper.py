@@ -8,7 +8,7 @@ original repo.git are shadowed by custom methods providing functionality
 needed for `git up`.
 """
 
-from __future__ import print_function
+
 
 __all__ = ['GitWrapper', 'GitError']
 

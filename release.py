@@ -57,12 +57,12 @@ def update_changelog(changes, new_version):
         for l in f:
             line = l.strip()
             if line == 'Changelog':
-                print 'Found changelog!'
+                print('Found changelog!')
                 changelog_found = True
                 new_file.append(line)
                 continue
             elif changelog_found and line == '---------':
-                print 'Found seperator!'
+                print('Found seperator!')
                 new_file.append(line)
                 new_file.append('')
                 new_file.extend(to_append.splitlines())
@@ -74,7 +74,7 @@ def update_changelog(changes, new_version):
 
 
 def show_diff():
-    print repo.git.diff()
+    print(repo.git.diff())
 
 
 def merge(new_version):
